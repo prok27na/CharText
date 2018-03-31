@@ -146,6 +146,18 @@ public void actionPerformed(ActionEvent e) {
 } 
 }); 
 
+ochistButton.addActionListener(new ActionListener() { 
+public void actionPerformed(ActionEvent e) { 
+area.setText(null); 
+} 
+}); 
+exitButton.addActionListener(new ActionListener() { 
+public void actionPerformed(ActionEvent e) { 
+System.exit(0); 
+} 
+}); 
+}} 
+
 private Object FlowLayout() { 
 // TODO Auto-generated method stub 
 return null; 

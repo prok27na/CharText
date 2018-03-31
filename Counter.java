@@ -42,4 +42,23 @@ public class Counter extends JFrame {
           panel.add(exitButton);
           //ƒобавление панели
           add(panel);
+//добавл€ем слушател€ на событие нажати€ 
+kopirButton.addActionListener(new FirstB()); 
+//добавл€ем слушател€ на событие нажати€ 
+zakazchButton.addActionListener(new SecondB()); 
+//добавл€ем слушател€ на событие нажати€ 
+exitButton.addActionListener(new ActionListener() { 
+public void actionPerformed(ActionEvent e) { 
+System.exit(0); 
+} 
+}); 
+} 
+
+public static void main(String[] args) { 
+// —оздаем объект класса Counter (калькул€тора): 
+Counter rgr = new Counter(); 
+// «апускаем окно калькул€тора: 
+rgr.setVisible(true); 
+} 
+} 
         
